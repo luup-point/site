@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="pt-PT">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LUUP. para organizadores de festivais</title>
+<meta name="description" content="A LUUP. é a app que põe o mapa, o cartaz e as novidades do vosso festival no bolso do público. A configuração é connosco.">
+<meta name="theme-color" content="#0b0b0b">
+<link rel="canonical" href="https://luuppoint.com/">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="LUUP.">
+<meta property="og:url" content="https://luuppoint.com/">
+<meta property="og:title" content="LUUP. para organizadores de festivais">
+<meta property="og:description" content="A LUUP. é a app que põe o mapa, o cartaz e as novidades do vosso festival no bolso do público. A configuração é connosco.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;800&display=swap">
+<style>
+html{scroll-behavior:smooth}
+body{margin:0;background:#0b0b0b}
+a{color:#fff}a:hover{color:#d7ff3f}
+a:focus-visible,button:focus-visible{outline:3px solid #d7ff3f;outline-offset:3px}
+.sec{padding-left:clamp(20px,4vw,48px);padding-right:clamp(20px,4vw,48px)}
+.shot{flex:0 1 290px;width:100%;max-width:290px;aspect-ratio:4/5;border-radius:26px;overflow:hidden;display:flex;justify-content:center;align-items:flex-start;padding-top:26px;box-sizing:border-box}
+.scr{width:64%;aspect-ratio:9/19.5;border:5px solid #0b0b0b;border-bottom:0;border-radius:30px 30px 0 0;overflow:hidden;background:#000;flex:none;box-shadow:0 20px 48px rgba(0,0,0,.28)}
+.scr svg{display:block;width:100%;height:100%}
+.num{font-size:15px;color:#d7ff3f;font-weight:600;margin-bottom:16px}
+.h2{text-wrap:balance;margin:0 0 16px;font-size:clamp(34px,4.6vw,52px);line-height:1.02;font-weight:800;letter-spacing:-0.035em}
+.body{margin:0;font-size:19px;line-height:1.5;color:#b0b0b0}
+.fl{display:block;padding:13px 0;font-size:16px;color:#d0d0d0;text-decoration:none}
+.fh{font-size:12px;letter-spacing:.1em;color:#8a8a8a;margin-bottom:8px}
+.pill{display:inline-block;border:2px solid #0b0b0b;color:#0b0b0b;border-radius:999px;padding:13px 24px;font-size:15px;font-weight:600;text-decoration:none}
+.pill2{display:inline-flex;align-items:center;gap:8px;border:2px solid #fff;color:#fff;border-radius:999px;padding:12px 20px;min-height:48px;box-sizing:border-box;font-size:15px;font-weight:600;text-decoration:none}
+.ic{display:inline-flex;align-items:center;justify-content:center;width:48px;height:48px;border:2px solid #fff;border-radius:50%;color:#fff;box-sizing:border-box}
+.ic:hover{background:#d7ff3f;border-color:#d7ff3f;color:#0b0b0b}
+.fl2{display:inline-block;padding:13px 0;color:#d0d0d0;text-decoration:none}
+.pill2:hover{background:#d7ff3f;border-color:#d7ff3f;color:#0b0b0b}
+.lt{background:#fff;color:#0b0b0b}
+.lt .num{display:inline-block;background:#d7ff3f;color:#0b0b0b;padding:4px 12px;border-radius:999px;margin-bottom:20px}
+.lt .body{color:#454545;font-size:18px}
+.lt .h2{font-size:clamp(26px,2.8vw,34px);font-weight:700;letter-spacing:-0.02em;line-height:1.1}
+.lt2{background:#f1efe8;color:#0b0b0b}
+.lt2 .card{background:#fff}
+.lt2 .card p{color:#454545}
+.why{flex:1 1 260px;border-top:2px solid #0b0b0b;padding:24px 32px 8px 0;box-sizing:border-box}
+.why b{display:block;font-size:clamp(36px,4.4vw,56px);line-height:1;font-weight:800;letter-spacing:-0.04em;margin-bottom:12px}
+.why p{margin:0;font-size:18px;line-height:1.45;color:#454545}
+.msg{display:flex;align-items:flex-end;gap:10px;max-width:94%}
+.msg p{margin:0;background:#fff;border:1px solid rgba(11,11,11,.12);border-radius:20px 20px 20px 6px;padding:12px 16px;font-size:clamp(16px,1.6vw,19px);line-height:1.35;font-weight:600}
+.msg .av{width:28px;height:28px;border-radius:50%;flex:none}
+.msg.me{align-self:flex-end;flex-direction:row-reverse}
+.msg.me p{background:#d7ff3f;border-color:#d7ff3f;border-radius:20px 20px 6px 20px;font-weight:800}
+.step2{flex:1 1 240px;display:flex;flex-direction:column;align-items:center;gap:20px}
+.slogan{font-family:Archivo,Helvetica,Arial,sans-serif}
+.dot{display:inline-flex;align-items:center;justify-content:center;width:60px;height:60px;border-radius:50%;background:#d7ff3f;color:#0b0b0b;font-size:28px;font-weight:800}
+.step2 p{text-wrap:balance;margin:0;font-size:clamp(17px,1.6vw,21px);line-height:1.3;max-width:12em;font-weight:600}
+.card{flex:1 1 280px;background:#151515;border-radius:28px;padding:32px;min-height:180px;box-sizing:border-box}
+.card h3{margin:0 0 10px;font-size:22px;font-weight:800;letter-spacing:-0.01em}
+.card p{margin:0;font-size:17px;line-height:1.5;color:#b0b0b0}
+.step{flex:1 1 240px}
+.step b{display:block;font-size:56px;line-height:1;font-weight:800;letter-spacing:-0.04em;margin-bottom:12px}
+.step p{margin:0;font-size:19px;line-height:1.4}
+</style>
+<style>
+.lb{border:1px solid #333;border-radius:999px;padding:10px 14px;min-height:44px;min-width:44px;font:600 14px Archivo,Helvetica,Arial,sans-serif;cursor:pointer;background:transparent;color:#d0d0d0}
+.lb[aria-pressed="true"]{background:#d7ff3f;color:#0b0b0b;border-color:#d7ff3f}
+.mail{color:#0b0b0b;text-underline-offset:3px}
+.mail:hover{color:#0b0b0b;text-decoration-thickness:2px}
+</style>
+</head>
+<body>
+<div style="font-family: Archivo, Helvetica, Arial, sans-serif; color: #fff; background: #0b0b0b">
+
+<div class="sec" style="position: relative; background: #0b0b0b; padding-top: 12px; padding-bottom: 12px">
+<div style="max-width: 1360px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 16px">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 4px">
+<img src="luup-logo.png" alt="LUUP." style="display: block; height: 34px; width: auto">
+<div class="slogan" style="font-size: 13px; line-height: 1.2; letter-spacing: 0.02em; color: #f9f9f7">Feeling lost is optional.</div>
+</div>
+<div style="display: flex; align-items: center; gap: 8px">
+<button type="button" class="lb" data-lang="pt" aria-pressed="true" aria-label="Português">PT</button>
+<button type="button" class="lb" data-lang="en" aria-pressed="false" aria-label="English">EN</button>
+</div>
+</div>
+</div>
+
+<div class="sec" style="min-height: clamp(560px, calc(100vh - 80px), 1100px); box-sizing: border-box; display: flex; align-items: center; padding-top: 28px; padding-bottom: 28px">
+<div style="width: 100%; max-width: 1360px; margin: 0 auto; display: flex; align-items: center; flex-wrap: wrap">
+<div style="flex: 1 1 380px; box-sizing: border-box; padding: 24px clamp(0px, calc((100vw - 760px) * 10), 56px) 24px 0">
+<h1 style="margin: 0 0 24px; font-size: clamp(38px, 4.8vw, 72px); line-height: 1.02; font-weight: 800; letter-spacing: -0.04em; text-wrap: balance" data-i18n="h1">O vosso festival no bolso do público.</h1>
+<p style="margin: 0 0 32px; max-width: 560px; font-size: 22px; line-height: 1.45; color: #b0b0b0; text-wrap: pretty"><span data-i18n="sub1">A LUUP. é a app que o põe lá.</span> <span style="color: #fff; font-weight: 600" data-i18n="sub2">Já está nas lojas, e a configuração é connosco.</span></p>
+<a href="#cta" style="display: inline-block; background: #d7ff3f; color: #0b0b0b; border-radius: 999px; padding: 16px 32px; font-size: 17px; font-weight: 600; text-decoration: none" data-i18n="heroBtn">Vamos falar</a>
+</div>
+<div style="flex: 1 1 380px; display: flex; align-items: center; justify-content: flex-start">
+<div style="flex: 0 1 auto; position: relative; box-sizing: border-box; overflow: hidden; width: min(100%, calc((100vh - 144px) * 0.8), 768px); max-height: 960px; margin: 0; aspect-ratio: 4 / 5; border-radius: 0; background: #151515; border: 1px solid #262626; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 16px">
+<svg width="72" height="72" viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="35" fill="#d7ff3f"/><path d="M29 22 L51 36 L29 50 Z" fill="#0b0b0b"/></svg>
+<div style="font-size: 14px; color: #8a8a8a; text-align: center; padding: 0 20px" data-i18n="video">[VÍDEO 4:5, 90 s: a app a trabalhar]</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="sec lt" style="padding-top: 96px; padding-bottom: 96px">
+<div style="max-width: 760px; margin: 0 auto">
+
+<div style="position: relative; box-sizing: border-box; display: flex; gap: 56px; align-items: center; flex-wrap: wrap; margin-bottom: 40px">
+<div style="flex: 1 1 320px">
+<h2 class="h2" data-i18n="r1h">O público vai dar com o bar à primeira.</h2>
+<p class="body" data-i18n="r1p">Desenhamos o vosso mapa e o público vê onde está.</p>
+</div>
+<div class="shot" style="background: #b9b4ff"><div class="scr">
+<svg viewBox="0 0 226 490" role="img" aria-label="Mapa ilustrado do festival com entradas, palcos, casas de banho, apoio médico e estacionamento" data-i18n-aria-label="r1alt" font-family="Archivo,Helvetica,Arial,sans-serif"><rect width="226" height="490" fill="#f5eedd"/><path d="M-10 90C30 60 90 70 130 50S210 40 240 80V420C190 450 120 430 70 460S-10 450-10 420Z" fill="#c6e6a8"/><path d="M40 310C70 260 40 220 110 190S180 140 125 100" stroke="#fff" stroke-width="12" fill="none" stroke-linecap="round"/><rect x="14" y="14" width="198" height="32" rx="16" fill="#fff"/><text x="30" y="34" font-size="11" fill="#6b6b6b" data-i18n="search">Procurar no mapa</text><rect x="14" y="54" width="62" height="24" rx="12" fill="#d7ff3f"/><text x="45" y="70" font-size="10" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="chipEntr">Entradas</text><rect x="82" y="54" width="36" height="24" rx="12" fill="#fff"/><text x="100" y="70" font-size="10" font-weight="800" fill="#333" text-anchor="middle">WC</text><rect x="124" y="54" width="88" height="24" rx="12" fill="#fff"/><text x="168" y="70" font-size="10" font-weight="800" fill="#333" text-anchor="middle" data-i18n="chipMed">Apoio médico</text><rect x="30" y="112" width="76" height="44" rx="12" fill="#ff7a59"/><text x="68" y="139" font-size="11" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="stage1">Palco 1</text><rect x="124" y="176" width="78" height="44" rx="12" fill="#2bb3a3"/><text x="163" y="203" font-size="11" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="stage2">Palco 2</text><rect x="30" y="240" width="44" height="30" rx="9" fill="#b9b4ff"/><text x="52" y="260" font-size="10" font-weight="800" fill="#2b2566" text-anchor="middle">WC</text><circle cx="162" cy="262" r="24" fill="#ffd45e"/><text x="162" y="266" font-size="10" font-weight="800" fill="#4a3900" text-anchor="middle" data-i18n="food">Comida</text><circle cx="104" cy="282" r="13" fill="#ff7a59" stroke="#0b0b0b" stroke-width="2"/><text x="104" y="287" font-size="14" font-weight="800" fill="#0b0b0b" text-anchor="middle">+</text><rect x="148" y="298" width="58" height="26" rx="8" fill="#9ec5ff"/><text x="177" y="315" font-size="10" font-weight="800" fill="#0b2a55" text-anchor="middle" data-i18n="parking">Estac.</text><circle cx="40" cy="306" r="13" fill="#d7ff3f" stroke="#0b0b0b" stroke-width="2"/><text x="40" y="332" font-size="10" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="entrance">Entrada</text></svg>
+</div></div>
+</div>
+
+<div style="position: relative; box-sizing: border-box; display: flex; flex-direction: row-reverse; gap: 56px; align-items: center; flex-wrap: wrap; margin-bottom: 40px">
+<div style="flex: 1 1 320px">
+<h2 class="h2" data-i18n="r2h">O público vai saber quem toca a seguir.</h2>
+<p class="body" data-i18n="r2p">O cartaz todo, horários incluídos, no bolso do público.</p>
+</div>
+<div class="shot" style="background: #d7ff3f"><div class="scr">
+<svg viewBox="0 0 226 490" role="img" aria-label="Programa do dia com uma notificação de alteração de horário" data-i18n-aria-label="r2alt" font-family="Archivo,Helvetica,Arial,sans-serif"><rect width="226" height="490" fill="#14141a"/><rect x="12" y="12" width="202" height="50" rx="16" fill="#26262e" stroke="#d7ff3f" stroke-width="1.5"/><text x="26" y="30" font-size="9" font-weight="800" fill="#d7ff3f">LUUP. · <tspan data-i18n="nowLower">agora</tspan></text><text x="26" y="48" font-size="11" font-weight="800" fill="#fff" data-i18n="noticeL1">Palco 2: 22:00 passa para 22:15</text><text x="16" y="94" font-size="17" font-weight="800" fill="#fff" data-i18n="today">Hoje</text><rect x="16" y="106" width="44" height="24" rx="12" fill="#d7ff3f"/><text x="38" y="122" font-size="10" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="d1">Sex</text><rect x="66" y="106" width="44" height="24" rx="12" fill="#26262e"/><text x="88" y="122" font-size="10" fill="#d0d0d8" text-anchor="middle" data-i18n="d2">Sáb</text><rect x="116" y="106" width="44" height="24" rx="12" fill="#26262e"/><text x="138" y="122" font-size="10" fill="#d0d0d8" text-anchor="middle" data-i18n="d3">Dom</text><rect x="14" y="144" width="198" height="52" rx="14" fill="#1f1f29"/><circle cx="32" cy="170" r="5" fill="#ff7a59"/><text x="46" y="166" font-size="12" font-weight="800" fill="#fff" data-i18n="artistA">Artista A</text><text x="46" y="182" font-size="10" fill="#b0b0bb"><tspan data-i18n="stage1">Palco 1</tspan> · 20:30</text><rect x="160" y="160" width="42" height="20" rx="10" fill="#d7ff3f"/><text x="181" y="174" font-size="9" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="now">Agora</text><rect x="14" y="204" width="198" height="52" rx="14" fill="#1f1f29"/><circle cx="32" cy="230" r="5" fill="#2bb3a3"/><text x="46" y="226" font-size="12" font-weight="800" fill="#fff" data-i18n="artistB">Artista B</text><text x="46" y="242" font-size="10" fill="#b0b0bb"><tspan data-i18n="stage2">Palco 2</tspan> · 22:15</text><rect x="14" y="264" width="198" height="52" rx="14" fill="#1f1f29"/><circle cx="32" cy="290" r="5" fill="#ff7a59"/><text x="46" y="286" font-size="12" font-weight="800" fill="#fff" data-i18n="artistC">Artista C</text><text x="46" y="302" font-size="10" fill="#b0b0bb"><tspan data-i18n="stage1">Palco 1</tspan> · 23:15</text></svg>
+</div></div>
+</div>
+
+<div style="position: relative; box-sizing: border-box; display: flex; gap: 56px; align-items: center; flex-wrap: wrap">
+<div style="flex: 1 1 320px">
+<h2 class="h2" data-i18n="r3h">O público vai ficar a saber por vocês.</h2>
+<p class="body" data-i18n="r3p">Vem aí chuva? Avisem direto no telemóvel, sem pedir favores ao algoritmo.</p>
+</div>
+<div class="shot" style="background: #ff7a59"><div class="scr">
+<svg viewBox="0 0 226 490" role="img" aria-label="Separador Info com novidades do festival e perguntas frequentes" data-i18n-aria-label="r3alt" font-family="Archivo,Helvetica,Arial,sans-serif"><rect width="226" height="490" fill="#14141a"/><text x="16" y="38" font-size="17" font-weight="800" fill="#fff" data-i18n="info">Info</text><rect x="16" y="52" width="82" height="26" rx="13" fill="#d7ff3f"/><text x="57" y="69" font-size="10" font-weight="800" fill="#0b0b0b" text-anchor="middle" data-i18n="tabNews">Novidades</text><rect x="104" y="52" width="50" height="26" rx="13" fill="#26262e"/><text x="129" y="69" font-size="10" fill="#d0d0d8" text-anchor="middle">FAQ</text><rect x="14" y="92" width="198" height="72" rx="16" fill="#1f1f29"/><text x="28" y="112" font-size="9" font-weight="800" fill="#d7ff3f" data-i18n="post">NOVIDADE</text><text x="28" y="132" font-size="12" font-weight="800" fill="#fff" data-i18n="post1h">Programa de sexta atualizado</text><text x="28" y="150" font-size="10" fill="#b0b0bb" data-i18n="post1p">Vê o horário no separador Cartaz.</text><rect x="14" y="172" width="198" height="72" rx="16" fill="#1f1f29"/><text x="28" y="192" font-size="9" font-weight="800" fill="#d7ff3f" data-i18n="post">NOVIDADE</text><text x="28" y="212" font-size="12" font-weight="800" fill="#fff" data-i18n="post2h">Nova zona de descanso</text><text x="28" y="230" font-size="10" fill="#b0b0bb" data-i18n="post2p">Junto ao Palco 2.</text><text x="16" y="268" font-size="9" font-weight="800" fill="#b0b0bb">FAQ</text><rect x="14" y="276" width="198" height="34" rx="12" fill="#1f1f29"/><text x="28" y="297" font-size="11" fill="#fff" data-i18n="q1">Como chego ao recinto?</text></svg>
+</div></div>
+</div>
+
+</div>
+</div>
+
+<div class="sec" style="padding-top: 120px; padding-bottom: 120px; text-align: center">
+<div style="max-width: 1000px; margin: 0 auto">
+<h2 class="h2" style="margin-bottom: 56px; font-size: clamp(32px, 4.4vw, 56px)" data-i18n="howH">Como é que funciona?</h2>
+<div style="display: flex; gap: 56px 32px; flex-wrap: wrap; justify-content: center">
+<div class="step2"><span class="dot">1</span><p data-i18n="s1">Vocês mostram-⁠nos o festival.</p></div>
+<div class="step2"><span class="dot">2</span><p data-i18n="s2">Nós configuramos tudo na app.</p></div>
+<div class="step2"><span class="dot">3</span><p data-i18n="s3">O público instala-⁠a grátis, claro.</p></div>
+</div>
+</div>
+</div>
+
+<div class="sec lt2" style="padding-top: 112px; padding-bottom: 112px">
+<div style="max-width: 968px; margin: 0 auto; display: flex; gap: 48px 72px; align-items: center; flex-wrap: wrap">
+<div style="flex: 1 1 420px">
+<h2 class="h2" style="margin: 0; font-size: clamp(26px, 2.7vw, 38px)"><span style="display: block" data-i18n="whyH1">Redes sociais? PDFs?</span><span style="display: block" data-i18n="whyH2">Um só sítio chega.</span></h2>
+</div>
+<div style="flex: 1 1 380px; display: flex; flex-direction: column; gap: 12px">
+<div class="msg"><span class="av" style="background: #b9b4ff" aria-hidden="true"></span><p data-i18n="q1m">A que horas toca o cabeça de cartaz?</p></div>
+<div class="msg"><span class="av" style="background: #ff7a59" aria-hidden="true"></span><p data-i18n="q2m">O mapa é um PDF. Não abre.</p></div>
+<div class="msg"><span class="av" style="background: #2bb3a3" aria-hidden="true"></span><p data-i18n="q3m">Onde ficam as casas de banho?</p></div>
+<div class="msg"><span class="av" style="background: #ffd45e" aria-hidden="true"></span><p data-i18n="q4m">Vi num story que o horário mudou. É verdade?</p></div>
+<div class="msg"><span class="av" style="background: #9ec5ff" aria-hidden="true"></span><p data-i18n="q5m">Onde é que se deixa o carro?</p></div>
+<div class="msg me"><p data-i18n="qa">Está tudo na app.</p></div>
+</div>
+</div>
+</div>
+
+<div class="sec" style="padding-top: 48px; padding-bottom: 72px">
+<div style="max-width: 900px; margin: 0 auto; background: #151515; padding: 40px; display: flex; gap: 32px; align-items: center; flex-wrap: wrap">
+<div style="width: 120px; height: 120px; border-radius: 60px; border: 1px solid #333; background: #1d1d1d; display: flex; align-items: center; justify-content: center; font-size: 13px; color: #8a8a8a; text-align: center; flex: none" data-i18n="photo">[FOTO DOS DOIS]</div>
+<div style="flex: 1 1 300px">
+<h3 style="margin: 0 0 14px; font-size: clamp(28px, 3.6vw, 40px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.05; text-wrap: balance" data-i18n="aboutH">Geeks de tecnologia. Fãs de festivais.</h3>
+<p style="margin: 0; font-size: 19px; line-height: 1.5; color: #d0d0d0" data-i18n="aboutText">Conhecemo-nos em Engenharia, ficámos amigos e adoramos festivais. Gostamos de aproveitar o momento e ir na onda; encontrar o caminho de volta, nem tanto. Por isso fizemos uma navegação a sério, e mostramo-la com todo o gosto.</p>
+</div>
+</div>
+</div>
+
+<div id="cta" style="margin: 0; padding: clamp(56px, 8vw, 104px) 24px; background: #d7ff3f; color: #0b0b0b; text-align: center">
+<h2 style="margin: 0 auto 20px; max-width: 920px; font-size: clamp(34px, 5.2vw, 68px); line-height: 1.02; font-weight: 800; letter-spacing: -0.04em; text-wrap: balance" data-i18n="ctaH">Planeiam o próximo verão? Tratamos disso.</h2>
+<p style="margin: 0 0 36px; font-size: 21px" data-i18n="ctaP">Mostrem-nos o festival agora, não em plena montagem.</p>
+<a href="mailto:festivals@luuppoint.com" style="display: inline-block; background: #0b0b0b; color: #fff; border-radius: 999px; padding: 16px 40px; font-size: 18px; font-weight: 600; text-decoration: none" data-i18n="ctaBtn">Vamos falar</a>
+<p style="margin: 20px 0 0; font-size: 16px"><a class="mail" href="mailto:festivals@luuppoint.com">festivals@luuppoint.com</a></p>
+</div>
+
+<div class="sec" style="padding-top: 64px; padding-bottom: 24px">
+<div style="max-width: 1360px; margin: 0 auto">
+<div style="display: flex; justify-content: space-between; align-items: center; gap: 32px 48px; flex-wrap: wrap">
+<div style="display: flex; flex-direction: column; align-items: center; gap: 6px">
+<img src="luup-logo.png" alt="LUUP." style="display: block; height: 40px; width: auto">
+<div class="slogan" style="font-size: 13px; line-height: 1.2; letter-spacing: 0.02em; color: #f9f9f7">Feeling lost is optional.</div>
+</div>
+<div style="display: flex; align-items: center; gap: 20px 40px; flex-wrap: wrap">
+<div style="display: flex; gap: 12px; flex-wrap: wrap">
+<a class="pill2" href="https://apps.apple.com/pt/app/luup/id6762617128?l=en-GB" target="_blank" rel="noopener" aria-label="Descarregar na App Store" data-i18n-aria-label="aApple"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.2.9-1.3 1.3-2.5 1.3-2.6 0 0-2.5-1-2.5-3.9zM14.1 5.8c.6-.8 1.1-1.8.9-2.8-.9 0-2 .6-2.6 1.4-.6.7-1.1 1.7-.9 2.7 1 .1 2-.5 2.6-1.3z"/></svg>App Store</a>
+<a class="pill2" href="https://play.google.com/store/apps/details?id=com.luuppoint.app" target="_blank" rel="noopener" aria-label="Descarregar no Google Play" data-i18n-aria-label="aGoogle"><svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="#32bbff" d="M4 2L13 12 4 22z"/><path fill="#00e676" d="M4 2L17.4 9.4 13 12z"/><path fill="#ffd500" d="M17.4 9.4L21 12 17.4 14.6 13 12z"/><path fill="#ff3a44" d="M4 22L13 12 17.4 14.6z"/></svg>Google Play</a>
+</div>
+<div style="display: flex; gap: 12px">
+<a class="ic" href="https://www.instagram.com/luuppoint/" target="_blank" rel="noopener" aria-label="LUUP. no Instagram" data-i18n-aria-label="aIg"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.2" fill="currentColor"/></svg></a>
+<a class="ic" href="https://www.tiktok.com/@luuppoint" target="_blank" rel="noopener" aria-label="LUUP. no TikTok" data-i18n-aria-label="aTt"><svg width="22" height="22" viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3v11.5a3.5 3.5 0 1 1-3.5-3.5M14 3c.4 2.5 2 4 4.5 4.2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+</div>
+</div>
+</div>
+<div style="margin-top: 48px; padding-top: 16px; border-top: 1px solid #1f1f1f; display: flex; justify-content: space-between; gap: 8px 24px; flex-wrap: wrap; align-items: center; font-size: 14px; color: #8a8a8a">
+<div>© 2026 LUUP.</div>
+<div style="display: flex; gap: 24px; flex-wrap: wrap">
+<a class="fl2" href="#" data-i18n="privacy">Política de privacidade</a>
+<a class="fl2" href="#" data-i18n="terms">Termos de utilização</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+(function () {
+  var T = {"pt": {"aApple": "Descarregar na App Store", "aGoogle": "Descarregar no Google Play", "aIg": "LUUP. no Instagram", "aTt": "LUUP. no TikTok", "aboutH": "Geeks de tecnologia. Fãs de festivais.", "aboutText": "Conhecemo-nos em Engenharia, ficámos amigos e adoramos festivais. Gostamos de aproveitar o momento e ir na onda; encontrar o caminho de volta, nem tanto. Por isso fizemos uma navegação a sério, e mostramo-la com todo o gosto.", "artistA": "Artista A", "artistB": "Artista B", "artistC": "Artista C", "chipEntr": "Entradas", "chipMed": "Apoio médico", "ctaBtn": "Vamos falar", "ctaH": "Planeiam o próximo verão? Tratamos disso.", "ctaP": "Mostrem-nos o festival agora, não em plena montagem.", "d1": "Sex", "d2": "Sáb", "d3": "Dom", "entrance": "Entrada", "food": "Comida", "h1": "O vosso festival no bolso do público.", "heroBtn": "Vamos falar", "howH": "Como é que funciona?", "info": "Info", "noticeL1": "Palco 2: 22:00 passa para 22:15", "now": "Agora", "nowLower": "agora", "parking": "Estac.", "photo": "[FOTO DOS DOIS]", "post": "NOVIDADE", "post1h": "Programa de sexta atualizado", "post1p": "Vê o horário no separador Cartaz.", "post2h": "Nova zona de descanso", "post2p": "Junto ao Palco 2.", "privacy": "Política de privacidade", "q1": "Como chego ao recinto?", "q1m": "A que horas toca o cabeça de cartaz?", "q2m": "O mapa é um PDF. Não abre.", "q3m": "Onde ficam as casas de banho?", "q4m": "Vi num story que o horário mudou. É verdade?", "q5m": "Onde é que se deixa o carro?", "qa": "Está tudo na app.", "r1alt": "Mapa ilustrado do festival com entradas, palcos, casas de banho, apoio médico e estacionamento", "r1h": "O público vai dar com o bar à primeira.", "r1p": "Desenhamos o vosso mapa e o público vê onde está.", "r2alt": "Programa do dia com uma notificação de alteração de horário", "r2h": "O público vai saber quem toca a seguir.", "r2p": "O cartaz todo, horários incluídos, no bolso do público.", "r3alt": "Separador Info com novidades do festival e perguntas frequentes", "r3h": "O público vai ficar a saber por vocês.", "r3p": "Vem aí chuva? Avisem direto no telemóvel, sem pedir favores ao algoritmo.", "s1": "Vocês mostram-⁠nos o festival.", "s2": "Nós configuramos tudo na app.", "s3": "O público instala-⁠a grátis, claro.", "search": "Procurar no mapa", "stage1": "Palco 1", "stage2": "Palco 2", "sub1": "A LUUP. é a app que o põe lá.", "sub2": "Já está nas lojas, e a configuração é connosco.", "tabNews": "Novidades", "terms": "Termos de utilização", "today": "Hoje", "video": "[VÍDEO 4:5, 90 s: a app a trabalhar]", "whyH1": "Redes sociais? PDFs?", "whyH2": "Um só sítio chega."}, "en": {"aApple": "Download on the App Store", "aGoogle": "Get it on Google Play", "aIg": "LUUP. on Instagram", "aTt": "LUUP. on TikTok", "aboutH": "Tech geeks. Festival lovers.", "aboutText": "We met at engineering school, became friends and both love festivals. We enjoy the moment and go with the flow; finding the way back, less so. So we made ourselves a proper navigation tool, and we're happy to show you.", "artistA": "Artist A", "artistB": "Artist B", "artistC": "Artist C", "chipEntr": "Entrances", "chipMed": "First aid", "ctaBtn": "Let's talk", "ctaH": "Planning next summer? Let's get you sorted.", "ctaP": "Show us your festival now, not while the stages go up.", "d1": "Fri", "d2": "Sat", "d3": "Sun", "entrance": "Entrance", "food": "Food", "h1": "Your festival, in your crowd's pockets.", "heroBtn": "Let's talk", "howH": "How does it work?", "info": "Info", "noticeL1": "Stage 2: 22:00 moves to 22:15", "now": "Now", "nowLower": "now", "parking": "Parking", "photo": "[PHOTO OF THE TWO OF YOU]", "post": "NEWS", "post1h": "Friday's schedule is updated", "post1p": "Check it in the Line-up tab.", "post2h": "New chill-out area", "post2p": "Next to Stage 2.", "privacy": "Privacy policy", "q1": "How do I get to the venue?", "q1m": "What time does the headliner play?", "q2m": "The map is a PDF. It won't open.", "q3m": "Where are the toilets?", "q4m": "Saw on a story the schedule changed. Is that true?", "q5m": "Where do I park?", "qa": "It's all in the app.", "r1alt": "Illustrated festival map with entrances, stages, toilets, first aid and parking", "r1h": "Your crowd will find the bar first time.", "r1p": "We draw your map, and they see where they are.", "r2alt": "Today's schedule with a notification about a time change", "r2h": "Your crowd will know who's on next.", "r2p": "The whole line-up, set times and all, in their pocket.", "r3alt": "Info tab with festival news and frequently asked questions", "r3h": "Your crowd will hear the news from you.", "r3p": "Weather turning? Put it straight on their phones. No algorithm to beg.", "s1": "You show us your festival.", "s2": "We'll set it all up in the app.", "s3": "Your crowd gets it free, of course.", "search": "Search the map", "stage1": "Stage 1", "stage2": "Stage 2", "sub1": "LUUP. is the app that puts it there.", "sub2": "Already live, and we'll handle the setup.", "tabNews": "News", "terms": "Terms of use", "today": "Today", "video": "[VIDEO 4:5, 90 s: the app at work]", "whyH1": "Socials? PDFs?", "whyH2": "One place is enough."}};
+  var M = {"pt": {"title": "LUUP. para organizadores de festivais", "desc": "A LUUP. é a app que põe o mapa, o cartaz e as novidades do vosso festival no bolso do público. A configuração é connosco."}, "en": {"title": "LUUP. for festival organisers", "desc": "LUUP. is the app that puts your festival's map, line-up and news in your crowd's pockets. We handle the setup."}};
+  var lang = null;
+  try { lang = window.localStorage.getItem('luup-lang'); } catch (e) {}
+  if (lang !== 'pt' && lang !== 'en') {
+    try {
+      var l = ((navigator.languages && navigator.languages[0]) || navigator.language || 'pt').toLowerCase();
+      lang = l.indexOf('pt') === 0 ? 'pt' : 'en';
+    } catch (e) { lang = 'pt'; }
+  }
+  function setMeta(sel, v) { var el = document.querySelector(sel); if (el) el.setAttribute('content', v); }
+  function apply(lang, save) {
+    var d = T[lang], i, els;
+    els = document.querySelectorAll('[data-i18n]');
+    for (i = 0; i < els.length; i++) { var k = els[i].getAttribute('data-i18n'); if (d[k] != null) els[i].textContent = d[k]; }
+    els = document.querySelectorAll('[data-i18n-aria-label]');
+    for (i = 0; i < els.length; i++) { var k2 = els[i].getAttribute('data-i18n-aria-label'); if (d[k2] != null) els[i].setAttribute('aria-label', d[k2]); }
+    els = document.querySelectorAll('.lb');
+    for (i = 0; i < els.length; i++) els[i].setAttribute('aria-pressed', els[i].getAttribute('data-lang') === lang ? 'true' : 'false');
+    document.documentElement.lang = lang === 'pt' ? 'pt-PT' : 'en-GB';
+    document.title = M[lang].title;
+    setMeta('meta[name="description"]', M[lang].desc);
+    setMeta('meta[property="og:title"]', M[lang].title);
+    setMeta('meta[property="og:description"]', M[lang].desc);
+    if (save) { try { window.localStorage.setItem('luup-lang', lang); } catch (e) {} }
+  }
+  apply(lang, false);
+  var btns = document.querySelectorAll('.lb');
+  for (var b = 0; b < btns.length; b++) {
+    btns[b].addEventListener('click', function () { apply(this.getAttribute('data-lang'), true); });
+  }
+})();
+</script>
+</body>
+</html>
